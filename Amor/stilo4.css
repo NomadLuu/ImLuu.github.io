@@ -1,0 +1,248 @@
+:root{
+    --Text:#000;
+    --Especial:rgb(43, 175, 236);
+}
+body {
+    font-family: 'Poppins';font-size: 18px;
+    background-color: var(--Text);
+}
+
+
+header{
+    transition: 0.7s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    min-height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 20px;
+    align-items: center;
+    z-index: 10;
+}
+.logo{
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1.5px;
+
+}
+.yo{
+    
+    min-width: 600px;
+    height: 500px;
+    border-radius: 10px;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: .2s;
+
+}
+nav{
+    padding: 0px 30px;
+}
+a:hover{
+    color: var(--Especial);
+    position: relative;
+    bottom:2px ;
+}
+nav a{
+    padding: 0px 10px;
+}
+.midText{
+    color: #fff;
+    display: inline;
+    font-weight: 400;
+}
+
+.love{
+    color: rgb(151, 6, 6);
+}
+.Hall2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+h1{
+    font-weight: 400;
+}
+.v{
+  
+        margin: 10px 10px;
+        height: auto;
+        border-radius: 10px;
+    
+}
+header.bajar{
+    background-color: #000;
+    padding: 15px 20px;
+}
+.trayectoria{
+    
+    text-align: justify;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    padding: 0px 0px;
+}
+.soy1{
+    display: flex;
+    flex-direction: row;
+}
+.cronologia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tarjetas{
+    margin: 0px 20px;
+    width: 280px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.tarjetas img{
+    height: 450px;
+}
+.soy2{
+    margin-left: 30px;
+}
+footer{
+    margin-top: 20vh;
+    background-color: #3586ff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation:animateWave 6s linear infinite ;
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 15px;
+    animation:animateWave_02 6s linear infinite ;
+}
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 0;
+    animation:animateWave 4s linear infinite ;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 20px;
+    animation:animateWave_02 4s linear infinite ;
+}
+.footer1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.footer2{
+    width: 100%;
+    flex-direction: row;
+}
+.social_icon{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+i{
+    font-size: 2rem;
+    margin: 0 10px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.span{
+    color: var(--Especial);
+}
+@media (max-width:780px){
+    .Hall2{
+        background: url(Usv.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;  
+      }
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding-bottom: 15px;
+    }
+
+    .yo{
+        width: auto;
+        height: auto;
+    }
+
+}
+@media (max-width:1475px){
+    .trayectoria{
+        flex-direction: column;
+    }
+    .Hall2{
+        background-position: center;
+    }
+}
+
+@keyframes animateWave{
+    0%{
+        background-position-x:1000px;
+    }
+    100%{
+        background-position-x:0px ;
+    }
+}
+@keyframes animateWave_02{
+    0%{
+        background-position-x:0px;
+    }
+    100%{
+        background-position-x:1000px ;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stilo.css">
+    <link rel="stylesheet" href="normalize.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luu</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1><span class="span">I</span>'m <span class="span">L</span>uu</h1>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link"><span class="span">Inicio</span></a>
+            <a href="carrera/carrera.html" class="nav-link">Carrera</a>
+            <a href="Fotografía/Fotografía.html" class="nav-link">Fotografía</a>
+            <a href="Amor/Amor.html" class="nav-link">Amor</a>
+        </nav>
+
+    </header>
+    <div class="Hall" >
+        <h2 class="midText"><span class="typed"></span></h2>
+        <div id="cadenas-texto">
+            <p>Conoce más acerca de <span class="span">mi</span></p>
+            <p>Conoce más acerca de <span class="span">mi carrera</span></p>
+            <p>Conoce más acerca de <span class="span">mis pasiones</span></p>
+            <p>Conoce más acerca de <span class="span">mi historia de Amor</span></p>
+        </div>
+    </div>
+    <section class="soy">
+        <div class="soy1">
+                   <h2>Soy <span class="span">Luu</span></h2> 
+                   <img class="yo" src="yo.jpg">
+        </div>
+        <div class="soy2">
+            <p>Mi nombre es Luis Armando Contreras Ramos pero me conocen como <span class="span">Luu</span>.</p>
+            <p>Soy fotógrafo amateur y futuro mercadólogo, un dia mi sueño fue ser UI/UX Designer y esta es una prueba de lo que había aprendido. <br> 
+                Mis artistas favoritos son <span class="span">Bad Bunny</span>, <span class="span">Rels B</span> , <span class="span">The Weeknd</span> y <span class="span">Joji</span>.</p>
+                <p>Mis canciones favoritas de ellos son:</p>
+                <div class="canciones">
+                    <div class="tarjetas">
+                        <img class="portadas" src="Albums/UVST.jpg">
+                        <p>Moscow Mule<br>Bad Bunny</p>
+
+                    </div>
+                    <div class="tarjetas">
+                        <img class="portadas" src="Albums/Huracan.jpg">
+                        <p>Mírame Ma<br>Rels B</p>
+
+                    </div>
+                    <div class="tarjetas">
+                        <img class="portadas" src="Albums/Starboy.jpg">
+                        <p>Die For You<br>The Weeknd</p>
+
+                    </div>
+                    <div class="tarjetas">
+                        <img class="portadas" src="Albums/Glimpse.png">
+                        <p>Glimpse of Us<br>Joji</p>
+
+                    </div>                                         
+                </div>
+        </div>
+    </section>
+   
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <div class="footer1">
+            <p>Vlog personal de <span>L</span>uu</p>
+        </div>
+        <div class="footer2">
+            <ul class="social_icon">
+                <li><a href="https://www.instagram.com/luarcora/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/Luis.C.T.A.M/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/LuuWithHoodie"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <p>©2022 Contreras Ramos Luis Armando | Todos los derechos reservados</p>
+
+    </footer>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("bajar", window.scrollY > 0);
+        })
+    </script>
+<script src="https://kit.fontawesome.com/b3460c5420.js" crossorigin="anonymous"></script>
+<script src="typed.js"></script>
+<script src="main.js"></script>
+</body>
+
+</html>
