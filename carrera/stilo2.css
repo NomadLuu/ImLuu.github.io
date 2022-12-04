@@ -28,8 +28,7 @@ header{
 
 }
 .yo{
-    
-    min-width: 600px;
+
     height: 500px;
     border-radius: 10px;
 }
@@ -176,13 +175,24 @@ i{
     nav{
         padding-bottom: 15px;
     }
+    .soy1{
+        text-align: center;
+
+    }
+    .soy2{
+        text-align: center;
+    }
 
     .yo{
         width: auto;
         height: auto;
     }
+    img{
+        max-width: 100vw;
+    }
 
 }
+
 @media (max-width:1475px){
     .trayectoria{
         flex-direction: column;
